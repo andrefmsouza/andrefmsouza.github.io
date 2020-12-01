@@ -211,11 +211,11 @@ a:hover, a:focus, a:active {
   color: #420F66;
 }
 
-#skills{
+#skills, #projetos{
   background-color: #420F66;
 }
 
-#skills .session-title{
+#skills .session-title, #projetos .session-title{
   color: #AD8A4C;
 }
 
@@ -229,4 +229,16 @@ a:hover, a:focus, a:active {
 
 #experiencia h4{
   color: #AD8A4C;
+}
+
+#projetos img{
+  border-radius: 20px;
+}
+
+#projetos h4{
+  color: #AD8A4C;
+}
+
+#projetos{
+  color: #fff;
 }

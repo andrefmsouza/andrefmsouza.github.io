@@ -45,6 +45,7 @@ body{
 
 .back{
 	background: url(../img/verso.jpg);
+	z-index: 100;
 }
 
 .flipped.back{

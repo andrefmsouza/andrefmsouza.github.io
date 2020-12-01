@@ -6,10 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="André Felipe Souza">
 
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#420F66">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#420F66">
+
   <title>André Souza</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
@@ -46,6 +66,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#experiencia">Experiência</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projetos">Projetos</a>
         </li>
       </ul>
     </div>
@@ -120,32 +143,56 @@
         <h2 class="mb-5 session-title">Skills</h2>
 
         <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="HTML5">
             <i class="fab fa-html5"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="CSS3">
             <i class="fab fa-css3-alt"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="JavaScript">
             <i class="fab fa-js-square"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="Angular">
             <i class="fab fa-angular"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="React">
             <i class="fab fa-react"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="NodeJS">
             <i class="fab fa-node-js"></i>
           </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
+          <li class="list-inline-item" data-toggle="tooltip" title="Laravel">
+            <i class="fab fa-laravel"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="PHP">
             <i class="fab fa-php"></i>
           </li>
+          <li class="list-inline-item" data-toggle="tooltip" title="Wordpress">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          
+
+          <li class="list-inline-item" data-toggle="tooltip" title="Edição de vídeos">
+            <i class="fab fa-youtube"></i>
+          </li>
+          <li class="list-inline-item" data-toggle="tooltip" title="Música">
+            <i class="fas fa-guitar"></i>
+          </li>
+          <li class="list-inline-item" data-toggle="tooltip" title="Design Thinking">
+            <i class="far fa-lightbulb"></i>
+          </li>
+          <li class="list-inline-item" data-toggle="tooltip" title="Desenho">
+            <i class="fas fa-pencil-alt"></i>
+          </li>
+
         </ul>
       </div>
+
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+      </script>
     </section>
 
     <div class="m-0 session-break"></div>
@@ -164,9 +211,9 @@
           <div class="col-12 col-sm-8">
             <h4>Rivelli Alimentos S/A - 2013 à 2020</h4>
             <p>
-              Desenvolvimento de mais de 40 aplicativos internos para várias áreas da empresa, como: 
+              Desenvolvimento da intranet e mais de 40 aplicativos para diversas áreas da empresa, como: 
               logística, comercial, financeiro, departamento pessoal, recursos humanos, contabilidade, compras e outros.
-              Além dos aplicativos, fui responsável pelo desenvolvimento e manutenção do site entre 2018 e 2020.
+              Além dos aplicativos, fui responsável pelo desenvolvimento e manutenção do site institucional entre 2018 e 2020.
             </p>
           </div>
         </div>
@@ -191,6 +238,73 @@
       </div>
     </section>
 
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projetos">
+      <div class="w-100">
+        <h2 class="mb-5 session-title">Projetos Pessoais</h2>
+
+        <div class="row ">
+          <div class="col-12 col-sm-4">
+            <a href="/paciencia-js/" target="blank"> 
+              <img src="img/paciencia-js.png" width="100%" alt="Jogo de Paciência em JS" />
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-8">
+            <h4>Paciência JS - 2020</h4>
+            <p>
+              Jogo desenvolvido para aplicar os conceitos de Estrutura de Dados, como pilha, fila e lista duplamente encadeada. <br/>
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row ">
+          <div class="col-12 col-sm-4">
+            <a href="/corrida-elvis/" target="blank"> 
+              <img src="img/corrida_elvis.png" width="100%" alt="Corrida do Elvis" />
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-8">
+            <h4>Corrida do Elvis - FEICOB 2019</h4>
+            <p>
+              Jogo desenvolvido para a Rivelli Alimentos S/A para a FEICOB 2019. <br/>
+              O desenho do Elvis (mascote da empresa) foi feito a lapís e depois vetorizado.<br/>
+              Corra com ele e pegue produtos para acumular pontos.
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row ">
+          <div class="col-12 col-sm-4">
+            <a href="/memoria-rivelli/" target="blank"> 
+              <img src="img/memoria_rivelli.png" width="100%" alt="Jogo da Memória - Rivelli" />
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-8">
+            <h4>Jogo da Memória - Rivelli - FEICOB 2019</h4>
+            <p>
+              Jogo desenvolvido para a Rivelli Alimentos S/A para a FEICOB 2019. <br/>
+              Encontre os pares dos produtos e tente fazer o menor número de movimentos possíveis. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+        
+    
+    <div class="m-0 session-break"></div>
+
+    <footer>
+      
+    </footer>
   </div>
 
   <!-- Bootstrap core JavaScript -->
