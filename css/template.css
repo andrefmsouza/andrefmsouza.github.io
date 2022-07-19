@@ -185,20 +185,6 @@ a:hover, a:focus, a:active {
   color: #8701e7;
 }
 
-
-#sobre{
-  background-color: #421761;
-  color: white;
-}
-
-#sobre h1{
-  color: white;
-}
-
-#sobre .text-primary, #sobre .subheading a{
-  color: #AD8A4C !important;
-}
-
 .session-break{
   background: url(../img/breakpoint.png) no-repeat;
   background-size: 100% 100%;
@@ -209,18 +195,6 @@ a:hover, a:focus, a:active {
 
 .session-title{
   color: #420F66;
-}
-
-#skills, #projetos{
-  background-color: #420F66;
-}
-
-#skills .session-title, #projetos .session-title{
-  color: #AD8A4C;
-}
-
-#skills li{
-  color: rgba(255, 255, 255, 0.8);
 }
 
 #experiencia img{
@@ -237,8 +211,4 @@ a:hover, a:focus, a:active {
 
 #projetos h4{
   color: #AD8A4C;
-}
-
-#projetos{
-  color: #fff;
 }
