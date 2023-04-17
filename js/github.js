@@ -2,8 +2,9 @@ $(document).ready(() => {
     fetch("https://api.github.com/users/andrefmsouza/repos")
         .then( r => r.json() )
         .then( repos => {
-            console.log(repos);
-            repos.sort((a,b) => b.stargazers_count - a.stargazers_count );
+            // console.log(repos);
+            repos.sort((a,b) => Date.parse(b.updated_at) - Date.parse(a.updated_at) );
+            repos = repos.slice(0, 6);
             repos.map( repo => {
                 $("#projects").append(`
                 <div class="col-12 col-lg-6">
